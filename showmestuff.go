@@ -19,6 +19,19 @@ func readInput() {
 	fmt.Println("the host os is", runtime.GOOS)
 }
 
+func readCommandLine() {
+	// indexing of args starts at 0.
+	// the 0th index contains the name of the executable.
+	// if we directly run the app, go will create an exe implicitly and calls that with the fun exe name,
+	// so you will end up having the full name printed
+	//eg: [C:\Users\VAIBHA~1.BAN\AppData\Local\Temp\go-build3814485168\b001\exe\gsl.exe]
+	args := os.Args
+
+	fmt.Println(args)
+}
+
 func main() {
-	readInput()
+	//readInput()
+	readCommandLine()
+
 }
