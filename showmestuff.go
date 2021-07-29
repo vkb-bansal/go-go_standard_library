@@ -7,7 +7,7 @@ import (
 	"runtime"
 )
 
-func main() {
+func readInput() {
 	fmt.Printf("hello we are running go: %v\n", runtime.Version())
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Println("whats ur name")
@@ -17,5 +17,8 @@ func main() {
 	fmt.Print(text)
 	//display the host os
 	fmt.Println("the host os is", runtime.GOOS)
+}
 
+func main() {
+	readInput()
 }
