@@ -33,6 +33,6 @@ func readCommandLine() {
 func main() {
 	//readInput()
 	//readCommandLine()
-	calculateTotalMealAmount()
-
+	//calculateTotalMealAmount()
+	flagUsage()
 }
